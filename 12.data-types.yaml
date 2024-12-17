@@ -7,9 +7,9 @@
     - shell
     - ansible
     EXPERIENCE: #map or dictionary
-    devops: 3 #number
-    aws: 2
-    docker: 1
+     devops: 3 #number
+     aws: 2
+     docker: 1
     REAL_PROJECT: TRUE
   taskS:
   - name: print data types
