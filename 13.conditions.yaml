@@ -5,3 +5,6 @@
   - name: check user exists or not
     ansible.bulitin.command: id expense
     
+    -name: say Hello
+     ansible.builtin.debug:
+      msg: "Hello"
