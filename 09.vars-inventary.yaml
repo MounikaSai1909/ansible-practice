@@ -5,6 +5,6 @@
   tasks: 
   - name: print information
     vars:
-    Weeks: "Monday" 
+      Weeks: "Monday" 
     ansible.builtin.debug:
       msg: "Hi, we are learning {{Course}} from trainer {{Trainer}}, and its duration is {{Duration}} timings are {{Timings}} on every {{Weeks}}."
