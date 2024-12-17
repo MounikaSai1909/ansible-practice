@@ -13,5 +13,5 @@
     REAL_PROJECT: TRUE
   tasks:
   - name: print data types
-    ansible.buitin.debug:
+    ansible.builtin.debug:
         msg: "Course is {{COURSE}}, Tools are {{TOOLS}}, Experience is {{EXPERIENCE}} is Real project {{REAL_PROJECT}}"
