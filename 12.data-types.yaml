@@ -14,4 +14,4 @@
     task:
     - name: print data types
       ansible.buitin.debug:
-        msg: "Course is {{COURSE}}, Tools are {{TOOLS}}, Experience is {{EXPERIENCE}} is Real project {{REAL_PROJECT}}""  
+        msg: "Course is {{COURSE}}, Tools are {{TOOLS}}, Experience is {{EXPERIENCE}} is Real project {{REAL_PROJECT}}"
