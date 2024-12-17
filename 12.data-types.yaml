@@ -11,7 +11,7 @@
     aws: 2
     docker: 1
     REAL_PROJECT: TRUE
-    taskS:
-    - name: print data types
-      ansible.buitin.debug:
+  taskS:
+  - name: print data types
+    ansible.buitin.debug:
         msg: "Course is {{COURSE}}, Tools are {{TOOLS}}, Experience is {{EXPERIENCE}} is Real project {{REAL_PROJECT}}"
