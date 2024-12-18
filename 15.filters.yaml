@@ -5,8 +5,44 @@
     ansible.builtin.debug:
       msg: " given course is {{course | default ('Ansible')}}"
 
+
+- name: upper case value
+  hosts: localhost
+  tasks:
   - name: print Upper case values
     vars:
       greetings: "good morning"
     ansible.builtin.debug:
       msg: "upper case letters are {{greetings | upper }}"
+
+
+- name: lower case value
+  hosts: localhost
+  tasks:
+  - name: print lower case values
+    vars:
+      greetings: "Good Morning"
+    ansible.builtin.debug:
+      msg: "lower case letters are {{greetings | lower }}"
+
+- name: duplicate value
+  hosts: localhost
+  tasks:
+  - name: print dublicate values
+    vars:
+      numbers: [1,2,3,3,5,5,6,7,8,9,0,4,6,8]
+    ansible.builtin.debug:
+      msg: "values are {{numbers | unique }}"
+
+- name: min or max value
+  hosts: localhost
+  tasks:
+  - name: print min or max values
+    vars:
+      numbers: [34,85,98,24,17,57]
+    ansible.builtin.debug:
+      msg: "minimum value is {{numbers | min }} , maximum value is {{numbers | max }}"
+
+
+
+
