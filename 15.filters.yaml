@@ -43,6 +43,21 @@
     ansible.builtin.debug:
       msg: "minimum value is {{numbers | min }} , maximum value is {{numbers | max }}"
 
+- name: converting dictionary to items
+  hosts: localhost
+  vars:
+      dictionary:
+        course: Ansible
+        Trainer: Mounika
+        Duration: 120hrs
+  tasks:
+  - name: before converting dictuonary to items
+    ansible.builtin.debug:
+      msg: "before converting : {{dictionary}}"
+
+  - name: after converting dictionary to items
+    ansible.builtin.debug:
+      msg: "After converting : {{dictionary | dict2items}}"
 
 
 
