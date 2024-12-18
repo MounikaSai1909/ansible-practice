@@ -61,18 +61,13 @@
 
   - name: converting list to dictionary
   hosts: localhost
-  # vars:
-  #     list:
-  #     - {'key': 'course', 'value': 'Ansible'}
-  #     - {'key': 'Trainer', 'value': 'Mounika'}
-  #     - {'key': 'Duration', 'value': '120hrs'}  
-  tasks:
-  - name: before converting list to dictuonary
-    vars:
+  vars:
       list:
       - {'key': 'course', 'value': 'Ansible'}
       - {'key': 'Trainer', 'value': 'Mounika'}
       - {'key': 'Duration', 'value': '120hrs'}  
+  tasks:
+  - name: before converting list to dictuonary
     ansible.builtin.debug:
       msg: "before converting : {{list}}"
 
