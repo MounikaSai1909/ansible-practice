@@ -59,7 +59,7 @@
     ansible.builtin.debug:
       msg: "After converting : {{dictionary | dict2items}}"
 
-  - name: converting list to dictionary
+- name: converting list to dictionary
   hosts: localhost
   vars:
       list:
