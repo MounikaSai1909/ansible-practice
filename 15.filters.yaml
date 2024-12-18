@@ -4,3 +4,9 @@
   - name: print default value
     ansible.builtin.debug:
       msg: " given course is {{course | default ('Ansible')}}"
+
+  - name: print Upper case values
+    vars:
+    greetings: "good morning"
+    ansible.builtin.debug:
+      msg: "upper case letters are {{greetings}}"
