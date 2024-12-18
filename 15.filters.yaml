@@ -7,6 +7,6 @@
 
   - name: print Upper case values
     vars:
-    greetings: "good morning"
+      greetings: "good morning"
     ansible.builtin.debug:
       msg: "upper case letters are {{greetings}}"
